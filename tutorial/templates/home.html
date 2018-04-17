@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 
+
 {% block content %}
-<h3 class="page-header text-center">tutorial</h3>
-<p>Contains a simple <code>blog</code> application with a <code>Post</code> model to which we will add comments by using <strong>django-contrib-comments</strong> and <strong>django-comments-xtd</strong>.</p>
-<p>Continue to the <a href="{% url 'blog:post-list' %}">blog</a>.</p>
+
+
+<p>В своем блоге я собираюсь писать короткие статьи на тему лжи,<br>которой наполнено наше сознание,<br>благодаря исторически сложившимся нелепостям<br>и откровенному обману.<br><br><em>Кстати, на фото: я позирую Родену.</em><br><br><br>Нажмите на эту <a href="{% url 'blog:post-list' %}">
+
+<button>кнопку</button></a>, чтобы перейти к списку статей.</p>
 {% endblock %}

@@ -10,12 +10,12 @@
 <p>
   {% autoescape off %}{{ object.body|linebreaks }}{% endautoescape %}
 </p>
-
+<br><br><br>
  <input type="button" onclick="history.back();" value="ВЕРНУТЬСЯ НА ГЛАВНУЮ СТРАНИЦУ"/>
-
+<br><br><br>
   {% if object.allow_comments %}
   <div class = "comment">
-   <h4 class = "text-center"> Ваш комментарий </h4 >
+   <h4 class = "text-center"> Комментировать </h4 ><br><br>
    <div class = "well">
      {% render_comment_form for object %}
    </ div>
@@ -27,13 +27,13 @@
    <a href = " {% url 'blog:post-list' %} "> </a>
    
  </div>
-
+<br><br>
 {% if comment_count %}
    <h4 class = "text-center"> Комментарии пользователей </h4>
  
    {% render_comment_list for object %}
  
- {% endif %}
+ {% endif %}<br><br>
 <input type="button" onclick="history.back();" value="ВЕРНУТЬСЯ НА ГЛАВНУЮ СТРАНИЦУ"/>
 
 {% endblock %}
